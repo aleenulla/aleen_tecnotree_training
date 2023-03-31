@@ -1,0 +1,9 @@
+1.create database hospital_management;
+2.create table employees (id int primary key, name varchar(15),age int);
+3.insert into employees (id, name, age) VALUES (1, 'John Doe', 30);
+4.select * from employees;
+5.select name, age from employees;
+6.update employees set age=35 where id=1;
+7.delete from employees where id = 1;
+8.drop table employees;
+9.drop database hospital_management;

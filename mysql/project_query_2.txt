@@ -1,0 +1,96 @@
+1.select first_name,last_name,job_id,salary
+from employees
+where first_name like 'S%';
+
+2.select * from employees where salary=(
+  select max(salary)
+  from employees
+);
+
+3.select *
+from employees 
+order BY salary DESC 
+limit 1 offset 1;
+
+4.select *
+from employees
+order by salary desc
+limit 2 offset 1;
+
+5.select e.first_name, e.salary, m.first_name as manager_name, m.salary AS manager_salary
+from employees e, employees m
+where e.manager_id = m.employee_id;
+
+6.select e.manager_id, count(*) as num_employees 
+from employees e group by e.manager_id order by num_employees desc;
+
+7.select department_id, count(*) as num_employees
+from employees
+group by department_id;
+
+8.select year(hire_date) as hire_year, count(*) as num_employees
+from employees
+group by hire_year;
+
+9.select min(salary) as min_salary, max(salary) as max_salary
+from employees;
+
+10.select first_name,last_name,salary,
+  case
+    when salary < 5000 then 'Group 1'
+    when salary >= 5000 and salary < 10000 then 'Group 2'
+    else 'Group 3'
+  end as salary_group
+from employees;
+
+11.select *
+from employees
+where first_name like '%an%';
+
+12.select first_name, phone_number
+from employees;
+
+13.select * 
+from employees
+where year(hire_date) = 1994 and month(hire_date) = 8;
+
+14.select first_name,last_name,salary
+from employees
+where salary > ( select avg(salary) from employees );
+
+15.select department_id, max(salary) as max_salary
+from employees
+group by department_id;
+
+16.select employee_id,first_name,last_name,salary
+from employees
+order by salary asc
+limit 5;
+
+17.select *
+from employees
+where year(hire_date) between 1980 and 1989;
+
+18.select first_name, concate(last_name, ', ', first_name) as name_reverse
+from employees;
+
+19.select *
+from employees
+where day(hire_date) > 15;
+
+22.select conact(m.first_name, ' ', m.last_name) as manager_name,
+          concat(e.first_name, ' ', e.last_name) AS employee_name
+from employees e,employees m
+where
+  e.manager_id = m.employee_id and e.department_id not in (
+    select department_id from employees where employee_id = m.employee_id);
+
+
+
+
+
+
+
+
+
+
