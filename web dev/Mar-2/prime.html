@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number</title>
+</head>
+
+<body bgcolor="lightblue">
+    <h1 style="color:darkblue">Welcome to Technotree World :)</h1>
+    <script>
+
+        let num = 17;
+        let isPrime = true; // initializing a variable as true
+
+
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                isPrime = false;
+                break; // exit the loop if a factor is found
+            }
+        }
+
+        if (isPrime) //true
+        {
+            console.log(num + "is prime");
+        }
+        else {
+            console.log(num + "is not prime");
+        }
+
+    </script>
+
+</body>
+
+</html>

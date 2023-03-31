@@ -1,0 +1,48 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+
+h1 {
+	font-size: 36px;
+	margin: 0;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 0;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 20px 0;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}

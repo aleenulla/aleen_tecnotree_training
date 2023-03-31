@@ -1,0 +1,36 @@
+<!-- //Creating a new element and appending it to the page -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="myList">
+  <li>BMW</li>
+  <li>Audi</li>
+  <li>Benz</li>
+</ul>
+
+<button id="btn">Book a drive</button>
+
+<script>
+    
+// Create a new list item element
+
+document.getElementById("btn").addEventListener("click",myfun)
+
+function myfun(){
+    alert("completed")
+}
+
+var newItem = document.createElement("li");
+newItem.textContent = "Ford";
+
+// Get the list element
+var list = document.getElementById("myList");
+
+// Append the new item to the list
+list.appendChild(newItem);
+</script>
+
+</body>
+</html>

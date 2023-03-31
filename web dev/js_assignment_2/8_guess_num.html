@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+</head>
+
+<body>
+    <h3>Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted
+        to input a guess number. If the user input matches with the guess number, the program will display a message
+        "Good Work" otherwise display a message "Not matched".</h3>
+
+    <script>
+
+        let randNumber = Math.floor(Math.random() * 10) + 1;
+
+
+        let guess = prompt("Guess a number between 1 and 10:");
+
+
+        if (guess == randNumber) {
+            alert("Good work!");
+        } else {
+            alert("Not matched. The number was " + randNumber + ".");
+        }
+
+    </script>
+
+</body>
+
+</html>

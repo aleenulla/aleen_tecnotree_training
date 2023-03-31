@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body bgcolor="lightblue">
+    <h3>Employee Form</h3>
+    <form class="container" onsubmit="event.preventDefault()">
+        Name: <input type="name" id="text"><br><br>
+        Email: <input type="email" id="email"><br><br>
+        <button id="sub">Submit</button>&nbsp;
+        <input type="reset" value="Reset">
+    </form>
+    <script>
+
+        // 8. eventListner to the forms
+        document.getElementById("sub").addEventListener("click", myFunSubmit)
+        function myFunSubmit() {
+            alert("succesfully Submitted")
+        }
+        document.getElementById("res").addEventListener("click", myFunReset)
+        function myFunReset() {
+            alert("succesfully Reset")
+        }
+    </script>
+
+</body>
+
+</html>

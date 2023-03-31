@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button and Paragraph Example</title>
+  </head>
+  <body>
+      <p id="text">click the below button to change the content </p>
+    <button onclick="changeText()">Click me!</button>
+    
+    <script>
+      function changeText() {
+        document.getElementById("text").innerHTML = "The button was clicked";
+      }
+    </script>
+  </body>
+</html>
