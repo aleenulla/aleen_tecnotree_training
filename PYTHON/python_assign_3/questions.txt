@@ -1,0 +1,6 @@
+What is the capital of India?,Mumbai,Chennai,New Delhi,Kolkata,New Delhi
+What is the national animal of India?,Lion,Tiger,Leopard,Elephant,Tiger
+Which river is known as the "Sorrow of Bihar"?,Brahmaputra,Kaveri,Yamuna,Ganges,Ganges
+What is the highest mountain peak in India?,Kanchenjunga,Mt. Everest,Nanda Devi,Annapurna,Kanchenjunga
+Which festival celebrates the victory of good over evil?,Holi,Diwali,Ganesh Chaturthi,Navratri,Diwali
+Who was the first Prime Minister of India?,Jawaharlal Nehru,Lal Bahadur Shastri,Indira Gandhi,Mahatma Gandhi,Jawaharlal Nehru
